@@ -242,6 +242,31 @@ transitive-accessible method net/minecraft/block/WitherSkullBlock <init> (Lnet/m
 # Constructors of non-abstract item classes
 transitive-accessible method net/minecraft/item/MiningToolItem <init> (Lnet/minecraft/item/ToolMaterial;Lnet/minecraft/registry/tag/TagKey;FFLnet/minecraft/item/Item$Settings;)V
 
+# Private static fields of DisplayEntity and its subclasses
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity START_INTERPOLATION Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity INTERPOLATION_DURATION Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity TELEPORT_DURATION Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity TRANSLATION Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity SCALE Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity LEFT_ROTATION Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity RIGHT_ROTATION Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity BILLBOARD Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity BRIGHTNESS Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity VIEW_RANGE Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity SHADOW_RADIUS Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity SHADOW_STRENGTH Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity WIDTH Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity HEIGHT Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity GLOW_COLOR_OVERRIDE Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity$ItemDisplayEntity ITEM Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity$ItemDisplayEntity ITEM_DISPLAY Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity$BlockDisplayEntity BLOCK_STATE Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity$TextDisplayEntity TEXT Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity$TextDisplayEntity LINE_WIDTH Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity$TextDisplayEntity BACKGROUND Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity$TextDisplayEntity TEXT_OPACITY Lnet/minecraft/entity/data/TrackedData;
+transitive-accessible field net/minecraft/entity/decoration/DisplayEntity$TextDisplayEntity TEXT_DISPLAY_FLAGS Lnet/minecraft/entity/data/TrackedData;
+
 # Protected static fields of RenderPhase
 transitive-accessible field net/minecraft/client/render/RenderPhase NO_TRANSPARENCY Lnet/minecraft/client/render/RenderPhase$Transparency;
 transitive-accessible field net/minecraft/client/render/RenderPhase ADDITIVE_TRANSPARENCY Lnet/minecraft/client/render/RenderPhase$Transparency;

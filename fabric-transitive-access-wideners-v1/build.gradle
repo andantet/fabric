@@ -39,7 +39,7 @@ task generateAccessWidener {
 			lines.add("")
 			generateItemConstructors(lines, fs)
 			lines.add("")
-			generateDisplayEntityTrackedDataFields(lines, fs)
+			generateDisplayEntityTrackedDataMethods(lines, fs)
 			lines.add("")
 		}
 
@@ -177,8 +177,8 @@ def generateTrackedDataFields(String className, List<String> lines, FileSystem f
 	lines.addAll(collectedWideners)
 }
 
-def generateDisplayEntityTrackedDataFields(List<String> lines, FileSystem fs) {
-	lines.add("# Private static fields of DisplayEntity and its subclasses")
+def generateDisplayEntityTrackedDataMethods(List<String> lines, FileSystem fs) {
+	lines.add("# Private tracked data getter/setter methods of DisplayEntity and its subclasses")
 
 	generateTrackedDataFields("net/minecraft/entity/decoration/DisplayEntity", lines, fs)
 	generateTrackedDataFields("net/minecraft/entity/decoration/DisplayEntity\$ItemDisplayEntity", lines, fs)

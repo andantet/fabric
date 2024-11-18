@@ -242,7 +242,7 @@ transitive-accessible method net/minecraft/block/WitherSkullBlock <init> (Lnet/m
 # Constructors of non-abstract item classes
 transitive-accessible method net/minecraft/item/MiningToolItem <init> (Lnet/minecraft/item/ToolMaterial;Lnet/minecraft/registry/tag/TagKey;FFLnet/minecraft/item/Item$Settings;)V
 
-# Private static fields of DisplayEntity and its subclasses
+# Private tracked data getter/setter methods of DisplayEntity and its subclasses
 transitive-accessible method net/minecraft/entity/decoration/DisplayEntity setTransformation (Lnet/minecraft/util/math/AffineTransformation;)V
 transitive-accessible method net/minecraft/entity/decoration/DisplayEntity setInterpolationDuration (I)V
 transitive-accessible method net/minecraft/entity/decoration/DisplayEntity getInterpolationDuration ()I

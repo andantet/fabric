@@ -146,7 +146,7 @@ def generateTrackedDataFields(String className, List<String> lines, FileSystem f
 				}
 
 				// check methods as genuine basic getter/setters
-				long parameterCount = getMethodParameterCount(descriptor)
+				int parameterCount = Type.getArgumentCount(descriptor)
 
 				if (name.startsWith("get") && parameterCount != 0) {
 					return null
@@ -194,13 +194,6 @@ ClassNode loadClass(Path path) {
 	}
 
 	return node
-}
-
-def getMethodParameterCount(String descriptor) {
-	def parameterPart = descriptor.substring(descriptor.indexOf('(') + 1, descriptor.indexOf(')'))
-	if (parameterPart.isEmpty()) return 0
-	def matcher = parameterPart =~ /(\[*[ZCBSIJFD]|L[^;]+;)/
-	return matcher.size()
 }
 
 def validateAccessWidener(List<String> lines) {
